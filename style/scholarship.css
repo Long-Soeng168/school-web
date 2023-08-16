@@ -1,0 +1,96 @@
+:root {
+  --violet--dark: #3C1464;
+  --violet--medium: #502781;
+  --violet--light: #B55EE9;
+  --yellow--light: #FFFF7C;
+}
+.title {
+  margin-left: 14.5vw;
+  margin-top: 7rem;
+  color: var(--yellow--light);
+}
+table {
+  padding: 0;
+  width: 70vw;
+  margin: 4.5rem auto;
+}
+@media screen and (max-width: 800px){
+  table {
+    width: 90vw;
+  }
+  .title {
+    margin-left: 5vw;
+  }
+  .container-small {
+    max-width: 90vw;
+  }
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 2px solid var(--violet--light);
+}
+.head {
+  border-bottom: 2px solid var(--yellow--light);
+  margin-bottom: 2.5rem;
+}
+.data {
+  margin-bottom: 1.5rem;
+}
+.head:hover,
+.data:hover {
+  border-bottom: 2px solid cyan;
+}
+td:hover,
+th:hover {
+  color: cyan;
+}
+th:first-child {
+  text-align: start;
+}
+td:nth-child(2){
+  text-align: center;
+}
+th:last-child,
+td:last-child {
+  text-align: end;
+}
+
+/* hero */
+.header .title {
+  margin: 0;
+  font-size: 3rem;
+}
+.pin .header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 500px){
+  .pin .header {
+    grid-template-columns: 1fr;
+  }
+  .card{
+    margin-bottom: 2rem;
+  }
+}
+.pin .btn {
+  font-size: 2.5rem;
+}
+ol {
+  color: var(--violet--dark);
+}
+.card ul,
+.card p {
+  color: white;
+}
+.card {
+  background-color: var(--violet--medium);
+  padding: 2rem 3rem 1rem;
+  margin-top: 5rem;
+}
+
+
+
